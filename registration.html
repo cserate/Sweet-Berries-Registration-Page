@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="registrationstyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header-flex">
+            <img src="Images/logo.png">
+            <div class="navbar-flex">
+                <a href="#">Courses</a>
+                <a href="#">About us</a>
+                <button>Home</button>
+            </div>
+        </div>
+
+        <div class="banner-flex">
+            <h1>Register Below!</h1>
+            <img src="Images/banner.jpg"></img>
+            
+        </div>
+
+        <!--this is where i will enter the form data
+            with the input fields, dropdown box, and submit/reset button-->
+        <form>
+            <fieldset>
+                <legend>Step 1: Tell Us About You</legend>
+                <label for="firstname">First Name:</label>
+                <br>
+                <input id="firstname" type="text" required>
+                <br>
+                <label for="lastname">Last Name:</label>
+                <br>
+                <input id="lastname" type="text" required>
+                <br>
+                <label for="age">Age:</label>
+                <br>
+                <input id="age" type="number">
+            </fieldset>
+            <fieldset>
+                <legend>Step 2: Create an Account</legend>
+                <label for="username">Username:</label>
+                <br>
+                <input id="username" type="text" placeholder="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <br>
+                <input id="password" type="text" placeholder="min 6 characters" required>
+            </fieldset>
+            <fieldset>
+                <legend>Step 3: Select Your Online Course</legend> 
+                <label for="courses"> Course:</label>
+                <select name="courses" id="courses">
+                    <option value="cookingessentials">Cooking Essentials</option>
+                    <option value="chefskills">Chef Skills</option>
+                    <option value="nutrition">Nutrition in Cooking</option>
+                    <option value="plant">Plant-Based Cooking</option>
+                    <option value="teen">Teen's Kitchen</option>
+                </select>
+            </fieldset>
+            <fieldset class ="step4">
+                <legend>Step 4: Add a Comment</legend> 
+                <br>
+                <textarea id="comment" placeholder="Write your comments and questions here"></textarea>
+                <p>*optional</p>
+            </fieldset>
+            <fieldset class="buttons">
+                <button>Submit</button>
+                <input type="reset">
+            </fieldset>
+        </form>
+        <div class ="footer">
+            <p>Sweet Berries</p>
+        </div>
+    </div>
+</body>
+</html>
